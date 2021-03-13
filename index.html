@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ジグソーパズル</title>
+    <link
+      rel="stylesheet"
+      href="https://kyosuke-fukui.github.io/puzzle_20210227/css/style.css"
+    />
+  </head>
+  <body>
+    <h1>ジグソーパズル</h1>
+    <div class="text">右の完成図を見ながらパズルを完成させよう！</div>
+
+    <div class="puzzle">
+      <!-- パズル部分   -->
+      <div class="qbox">
+        <img
+          src="https://source.unsplash.com/random/480x270"
+          width="480"
+          height="270"
+          id="myPuzzle"
+        />
+      </div>
+
+      <!-- 完成図 -->
+      <div class="abox">
+        <img
+          src="https://source.unsplash.com/random/480x270"
+          width="480"
+          height="270"
+        />
+      </div>
+    </div>
+
+    <button id="btn">次のパズル</button>
+
+    <!-- 遊び方 -->
+    <p>
+      ドラッグアンドドロップ:ピースを移動<br />
+      deleteキー:シャッフル<br />ダブルクリック:ピースを回転
+      <br />右クリック：ピースを反転<br />enterキー:全てのピースを正しい位置に移動
+    </p>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://kyosuke-fukui.github.io/puzzle_20210227js/snapfit.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://kyosuke-fukui.github.io/puzzle_20210227js/app.js"
+    ></script>
+  </body>
+</html>
